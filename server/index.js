@@ -40,7 +40,9 @@ app.use((req, res, next) => {
 });
 
 // execute bodyparser
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 // load routes
 app.use('/', routes());
